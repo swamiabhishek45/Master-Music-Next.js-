@@ -33,7 +33,7 @@ export default function Navbar({ className }: { className?: string }) {
                             </HoveredLink>
                         </div> */}
 
-                        <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+                        <div className=" text-sm grid grid-cols-2 gap-10 p-4 w-60 md:w-full">
                             <ProductItem
                                 title="Algochurn"
                                 href="https://algochurn.com"
