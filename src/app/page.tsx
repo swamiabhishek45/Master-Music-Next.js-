@@ -2,6 +2,7 @@ import FeaturedCourses from '@/components/FeaturedCourses';
 import HeroSection from '@/components/HeroSection'
 import { InfiniteMovingCardsDemo } from '@/components/MovingCards';
 import { StickyScrollReveal } from '@/components/StickyScrollReveal';
+import { CardHoverEffectDemo } from '@/components/UpcomingWebinars';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
           <FeaturedCourses />
           <StickyScrollReveal />
           <InfiniteMovingCardsDemo />
+          <CardHoverEffectDemo />
       </main>
   );
 }
