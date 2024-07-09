@@ -27,38 +27,47 @@ export default function Navbar({ className }: { className?: string }) {
                         active={active}
                         item="Our Courses"
                     >
-                        {/* <div className="flex flex-col space-y-4 text-sm">
+                        <div className="flex flex-col space-y-4 text-sm">
                             <HoveredLink href="/courses">
                                 All Courses
                             </HoveredLink>
-                        </div> */}
-
-                        <div className=" text-sm grid grid-cols-2 gap-10 p-4 w-60 md:w-full">
-                            <ProductItem
-                                title="Algochurn"
-                                href="https://algochurn.com"
-                                src="/"
-                                description="Prepare for tech interviews like never before."
-                            />
-                            <ProductItem
-                                title="Algochurn"
-                                href="https://algochurn.com"
-                                src="/"
-                                description="Prepare for tech interviews like never before."
-                            />
-                            <ProductItem
-                                title="Algochurn"
-                                href="https://algochurn.com"
-                                src="/"
-                                description="Prepare for tech interviews like never before."
-                            />
-                            <ProductItem
-                                title="Algochurn"
-                                href="https://algochurn.com"
-                                src="/"
-                                description="Prepare for tech interviews like never before."
-                            />
+                            <HoveredLink href="/">
+                                Basic Music Theory
+                            </HoveredLink>
+                            <HoveredLink href="/courses">
+                               Advanced Composition
+                            </HoveredLink>
+                            <HoveredLink href="/courses">
+                               Music Production
+                            </HoveredLink>
                         </div>
+
+                        {/* <div className=" text-sm grid grid-cols-2 gap-10 p-4 w-60 md:w-full">
+                            <ProductItem
+                                title="Algochurn"
+                                href="https://algochurn.com"
+                                src="/"
+                                description="Prepare for tech interviews like never before."
+                            />
+                            <ProductItem
+                                title="Algochurn"
+                                href="https://algochurn.com"
+                                src="/"
+                                description="Prepare for tech interviews like never before."
+                            />
+                            <ProductItem
+                                title="Algochurn"
+                                href="https://algochurn.com"
+                                src="/"
+                                description="Prepare for tech interviews like never before."
+                            />
+                            <ProductItem
+                                title="Algochurn"
+                                href="https://algochurn.com"
+                                src="/"
+                                description="Prepare for tech interviews like never before."
+                            />
+                        </div> */}
                     </MenuItem>
                     <Link href="/contact">
                         <MenuItem
