@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { HoverEffect } from "./ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
@@ -10,9 +11,20 @@ export function CardHoverEffectDemo() {
                     <h2 className="font-semibold uppercase text-teal-600 text-base tracking-wide ">
                         OUR POPULAR TRAINING PROGRAMS
                     </h2>
-                    <h1 className="text-2xl md:text-4xl">Choose From Top Courses By LearnNex</h1>
+                    <h1 className="text-2xl md:text-4xl">
+                        Choose From Top Courses By LearnNex
+                    </h1>
                 </div>
                 <HoverEffect items={projects} />
+            </div>
+            {/*  third portion */}
+            <div className="text-center mt-10">
+                <Link
+                    href="/courses"
+                    className="px-4 py-2 bg-white rounded border border-neutral-600 text-neutral-700 transition duration-200 hover:bg-gray-200"
+                >
+                    View More
+                </Link>
             </div>
         </div>
     );
