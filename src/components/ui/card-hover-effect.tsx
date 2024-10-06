@@ -8,9 +8,12 @@ export const HoverEffect = ({
     className,
 }: {
     items: {
+        id: number;
         title: string;
-        description: string;
-        link: string;
+        company: string;
+        price: string;
+        discountPrice: string;
+        image: string;
     }[];
     className?: string;
 }) => {
@@ -25,8 +28,8 @@ export const HoverEffect = ({
         >
             {items.map((item, idx) => (
                 <Link
-                    href={item?.link}
-                    key={item?.link}
+                    href="https://swamiabhishek45.vercel.app"
+                    key={item.id}
                     className="relative group  block p-2 h-full w-full"
                     onMouseEnter={() => setHoveredIndex(idx)}
                     onMouseLeave={() => setHoveredIndex(null)}
@@ -50,7 +53,7 @@ export const HoverEffect = ({
                     </AnimatePresence>
                     <Card>
                         <CardTitle>{item.title}</CardTitle>
-                        <CardDescription>{item.description}</CardDescription>
+                        <CardDescription>{item.title}</CardDescription>
                     </Card>
                 </Link>
             ))}

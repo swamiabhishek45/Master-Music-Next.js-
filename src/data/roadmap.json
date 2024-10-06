@@ -1,0 +1,44 @@
+{
+    "roadmap": [
+        {
+            "id": 1,
+            "title": "Trending Industry Tools",
+            "slug": "dsa",
+            "description": "Stay updated with LearnNex for cutting-edge industry-leading tech-relevant skills and knowledge.",
+            "price": 99.99,
+            "instructor": "John Doe",
+            "isFeatured": true,
+            "image": "/logos/1.svg"
+        },
+        {
+            "id": 2,
+            "title": "Government Certification",
+            "slug": "web-development",
+            "description": "Gain job market advantage with LearnNex's respected government-certified courses.",
+            "price": 99.99,
+            "instructor": "John Doe",
+            "isFeatured": true,
+            "image": "/logos/2.svg"
+        },
+        {
+            "id": 3,
+            "title": "Complete Placement Assistance",
+            "slug": "aptitude",
+            "description": "LearnNex prioritizes your success with comprehensive job placement support.",
+            "price": 99.99,
+            "instructor": "John Doe",
+            "isFeatured": true,
+            "image": "/logos/3.svg"
+        },
+        {
+            "id": 4,
+            "title": "Exposure to the Corporate World",
+            "slug": "core-subjects",
+            "description": "LearnNex’s live projects and internships provide you with hands-on experience.",
+            "price": 99.99,
+            "instructor": "John Doe",
+            "isFeatured": true,
+            "image": "/logos/4.svg"
+        }
+    ]
+}

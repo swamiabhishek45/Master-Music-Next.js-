@@ -8,8 +8,9 @@ export function CardHoverEffectDemo() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="text-center">
                     <h2 className="font-semibold uppercase text-teal-600 text-base tracking-wide ">
-                        Upcoming Webinars
+                        OUR POPULAR TRAINING PROGRAMS
                     </h2>
+                    <h1 className="text-2xl md:text-4xl">Choose From Top Courses By LearnNex</h1>
                 </div>
                 <HoverEffect items={projects} />
             </div>
@@ -18,39 +19,51 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
     {
-        title: "Stripe",
-        description:
-            "A technology company that builds economic infrastructure for the internet.",
-        link: "https://stripe.com",
+        id: 1,
+        title: "Drone Engineering",
+        company: "LearnNex",
+        price: "₹10,999.00",
+        discountPrice: "₹7,499.00",
+        image: "/courses/drone.png",
     },
     {
-        title: "Netflix",
-        description:
-            "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-        link: "https://netflix.com",
+        id: 2,
+        title: "Business Wiz Program: Your Pathway to Entrepreneurial Excellence",
+        company: "LearnNex",
+        price: "₹11,599.00",
+        discountPrice: "₹5,999.00",
+        image: "/courses/business.webp",
     },
     {
-        title: "Google",
-        description:
-            "A multinational technology company that specializes in Internet-related services and products.",
-        link: "https://google.com",
+        id: 3,
+        title: "Tech Wiz Program: The Ultimate Gateway to Tech Mastery",
+        company: "LearnNex",
+        price: "₹25,000.00",
+        discountPrice: "₹11,999.00",
+        image: "/courses/tech.webp",
     },
     {
-        title: "Meta",
-        description:
-            "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-        link: "https://meta.com",
+        id: 4,
+        title: "Unity Certified User Programmer and VR developers",
+        company: "LearnNex",
+        price: "₹14,999.00",
+        discountPrice: "₹9,999.00",
+        image: "/courses/unity.png",
     },
     {
-        title: "Amazon",
-        description:
-            "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-        link: "https://amazon.com",
+        id: 5,
+        title: "Software Development by ITS",
+        company: "LearnNex",
+        price: "₹14,999.00",
+        discountPrice: "₹9,999.00",
+        image: "/courses/software.png",
     },
     {
-        title: "Microsoft",
-        description:
-            "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-        link: "https://microsoft.com",
+        id: 6,
+        title: "Cloud Computing by ITS",
+        company: "LearnNex",
+        price: "₹14,999.00",
+        discountPrice: "₹9,999.00",
+        image: "/courses/cloud.png",
     },
 ];
