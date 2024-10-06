@@ -5,48 +5,42 @@ import Image from "next/image";
 
 const content = [
     {
-        title: "Collaborative Editing",
+        title: "Expert Trainers",
         description:
-            "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+            "Our courses are led by expert trainers with years of industry experience. They provide hands-on learning, real-world insights, and personalized guidance to help you master essential skills. With their expertise, you'll gain in-depth knowledge and practical skills to excel in your chosen field, ensuring a successful learning journey.",
         content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Collaborative Editing
+                <Image src="/girl.png" alt="img" width={200} height={200} />
             </div>
         ),
     },
     {
-        title: "Real time changes",
+        title: "Online Remote Learning",
         description:
-            "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+            "Our online remote learning platform offers flexibility and convenience, allowing you to learn from anywhere at your own pace. With interactive lessons, live sessions, and real-time support, you’ll have access to high-quality education without the need to commute. Gain valuable skills and knowledge from the comfort of your home.",
         content: (
             <div className="h-full w-full  flex items-center justify-center text-white">
-                <Image
-                    src="/linear.webp"
-                    width={300}
-                    height={300}
-                    className="h-full w-full object-cover"
-                    alt="linear board demo"
-                />
+                <Image src="/girl.png" alt="img" width={200} height={200} />
             </div>
         ),
     },
     {
-        title: "Version control",
+        title: "Lifetime Access",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "With lifetime access to our courses, you can revisit and review the materials whenever you need. This ensures you stay updated on the latest knowledge and skills, allowing you to learn at your own pace and continuously improve. Enjoy unlimited access to all resources, anytime and anywhere.",
         content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-                Version control
+                <Image src="/girl.png" alt="img" width={200} height={200} />
             </div>
         ),
     },
     {
-        title: "Running out of content",
+        title: "Certified Courses",
         description:
-            "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+            "Our certified courses provide you with industry-recognized credentials upon completion. These certifications validate your skills and enhance your professional credibility, giving you a competitive edge in the job market. With our comprehensive curriculum and expert guidance, you'll gain the knowledge and certification needed to advance your career confidently.",
         content: (
             <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Running out of content
+                <Image src="/girl.png" alt="img" width={200} height={200} />
             </div>
         ),
     },
@@ -54,6 +48,7 @@ const content = [
 export function StickyScrollReveal() {
     return (
         <div className="">
+            
             <StickyScroll content={content} />
         </div>
     );
