@@ -5,14 +5,14 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export function CardHoverEffectDemo() {
     return (
-        <div className="p-12 bg-gray-900">
+        <div className="py-12 bg-gray-900">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="text-center">
-                    <h2 className="font-semibold uppercase text-teal-600 text-base tracking-wide ">
+                <div className="text-center ">
+                    <h2 className="sm:font-semibold uppercase text-teal-600 text-base tracking-wide ">
                         OUR POPULAR TRAINING PROGRAMS
                     </h2>
-                    <h1 className="text-2xl md:text-4xl">
-                        Choose From Top Courses By LearnNex
+                    <h1 className="text-3xl md:text-4xl mt-5">
+                        Choose From Top Courses By <span className="text-violet-400 underline">LearnNex</span>
                     </h1>
                 </div>
                 <HoverEffect items={projects} />
@@ -23,7 +23,7 @@ export function CardHoverEffectDemo() {
                     href="/courses"
                     className="px-4 py-2 bg-white rounded border border-neutral-600 text-neutral-700 transition duration-200 hover:bg-gray-200"
                 >
-                    View More
+                    Browse All Courses
                 </Link>
             </div>
         </div>

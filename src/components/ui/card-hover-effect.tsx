@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -52,8 +53,36 @@ export const HoverEffect = ({
                         )}
                     </AnimatePresence>
                     <Card>
-                        <CardTitle>{item.title}</CardTitle>
-                        <CardDescription>{item.title}</CardDescription>
+                        <div className="sm:h-96">
+                            <Image
+                                src={item.image}
+                                alt={item.title}
+                                width={500}
+                                height={500}
+                                className="object-cover rounded-t-2xl"
+                            />
+                            <CardTitle>{item.title}</CardTitle>
+                            <CardDescription>By {item.company}</CardDescription>
+                        </div>
+                        <hr />
+                        <div className="flex my-5 justify-between items-center">
+                            <div className="flex gap-3 sm:flex-row">
+                                <p className="line-through text-gray-600">
+                                    {item.price}
+                                </p>
+                                <p>{item.discountPrice}</p>
+                            </div>
+                            <button className="border p-2 px-3 flex gap-2  rounded-full hover:text-black hover:bg-white ">
+                                <Image
+                                    src="/cart.png"
+                                    alt="cart"
+                                    width={24}
+                                    height={24}
+                                    className="hover:invert"
+                                />
+                                <p className="text-sm">Add to Cart</p>
+                            </button>
+                        </div>
                     </Card>
                 </Link>
             ))}
@@ -71,7 +100,7 @@ export const Card = ({
     return (
         <div
             className={cn(
-                "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+                "rounded-2xl h-full w-full overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
                 className
             )}
         >
@@ -109,7 +138,7 @@ export const CardDescription = ({
     return (
         <p
             className={cn(
-                "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+                "my-4 text-zinc-400 tracking-wide leading-relaxed text-sm ",
                 className
             )}
         >

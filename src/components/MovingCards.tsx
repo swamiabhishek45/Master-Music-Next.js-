@@ -6,8 +6,8 @@ import { image } from "framer-motion/client";
 
 export function InfiniteMovingCardsDemo() {
     return (
-        <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <h2 className="uppercase text-3xl font-bold m-10">
+        <div className="h-[30rem] sm:h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            <h2 className="uppercase text-center text-xl md:text-3xl font-bold m-10">
                 Authorized by top companies around the world
             </h2>
             <InfiniteMovingCards
